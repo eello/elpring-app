@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'com.github.eello'
-version = 'v1.0.0'
+version = 'v1.1.0'
 
 application {
     mainClass = 'eello.elpring.app.Application'
@@ -20,7 +20,7 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 dependencies {
-    implementation 'com.github.eello:elpring-boot:v1.0.0'
+    implementation 'com.github.eello:elpring-boot:v1.1.0'
 
     testImplementation platform('org.junit:junit-bom:6.0.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
