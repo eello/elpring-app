@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- 1. 콘솔 출력 포맷 설정 (알록달록한 기본 컬러 패턴) -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight(%-5level) %cyan([%thread]) %yellow(%logger{36}) - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 프레임워크 로그 레벨(INFO, DEBUG, TRACE) 설정 (스캔, 빈 생성 과정 보기) -->
+    <logger name="eello.elpring" level="INFO" />
+
+    <!-- 3. 기본(Root) 로그 레벨 설정 -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+
+</configuration>
