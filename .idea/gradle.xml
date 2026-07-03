@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/../elpring-boot" name="elpring-boot">
+                <projects>
+                  <project path="$PROJECT_DIR$/../elpring-boot" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/../elpring-di" name="elpring-di">
+                <projects>
+                  <project path="$PROJECT_DIR$/../elpring-di" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/../elpring-web" name="elpring-web">
+                <projects>
+                  <project path="$PROJECT_DIR$/../elpring-web" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/../elpring-boot" />
+            <option value="$PROJECT_DIR$/../elpring-di" />
+            <option value="$PROJECT_DIR$/../elpring-web" />
+          </set>
+        </option>
+        <option name="myGradleHome" value="" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

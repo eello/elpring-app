@@ -1,0 +1,28 @@
+rootProject.name = 'elpring-app'
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+// 테스트를 위한 로컬 라이브러리 우선 사용
+includeBuild('../elpring-di') {
+    dependencySubstitution {
+        substitute module('com.github.eello:elpring-di') using project(':')
+    }
+}
+
+includeBuild('../elpring-web') {
+    dependencySubstitution {
+        substitute module('com.github.eello:elpring-web') using project(':')
+    }
+}
+
+includeBuild('../elpring-boot') {
+    dependencySubstitution {
+        substitute module('com.github.eello:elpring-boot') using project(':')
+    }
+}
